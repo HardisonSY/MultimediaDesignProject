@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get  'members' => 'members#index'
 
+scope 'learn' do
+      get 'how-website-work' => 'learn#how_websites_work'
+      get 'what-is-html'     => 'learn#what_is_html'
+      get 'what-is-css'      => 'learn#what_is_css'
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
