@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=""><i class="fa fa-users"></i> HELLO</a>
+            <a class="navbar-brand" href="/"><i class="fa fa-users"></i> HELLO</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -19,13 +19,13 @@
                     aria-expanded="false">學習<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a href="learn1.html">How websites work?</a>
+                          <%= link_to "How websites work", how_websites_work_path %>
                         </li>
                         <li>
-                            <a href="learn2.html">What's HTML?</a>
+                          <%= link_to "What's HTML", what_is_html_path %>
                         </li>
                         <li>
-                            <a href="learn3.html">What's CSS</a>
+                          <%= link_to "What's CSS", what_is_css_path %>
                         </li>
                     </ul>
                 </li>

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get  'members' => 'members#index'
 
 scope 'learn' do
-      get 'how-website-work' => 'learn#how_websites_work'
+      get 'how-websites-work' => 'learn#how_websites_work'
       get 'what-is-html'     => 'learn#what_is_html'
       get 'what-is-css'      => 'learn#what_is_css'
   end
