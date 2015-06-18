@@ -10,3 +10,4 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( how_websites_work/howwebsiteswork_hype_generated_script.js )
+Rails.application.config.assets.precompile += %w( what_is_html/whatishtml_hype_generated_script.js )
