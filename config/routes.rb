@@ -6,10 +6,17 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get  'members' => 'members#index'
 
-scope 'learn' do
+  scope 'learn' do
       get 'how-websites-work' => 'learn#how_websites_work'
-      get 'what-is-html'     => 'learn#what_is_html'
-      get 'what-is-css'      => 'learn#what_is_css'
+      get 'what-is-html'      => 'learn#what_is_html'
+      get 'what-is-css'       => 'learn#what_is_css'
+  end
+
+  scope 'test' do
+      get 'how-websites-work' => 'test#how_websites_work'
+      get 'what-is-html'      => 'test#what_is_html'
+      get 'what-is-css'       => 'test#what_is_css'
+
   end
 
   # Example of regular route:
