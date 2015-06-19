@@ -6,19 +6,22 @@
   <title>FlashFinalProject</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'https://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'https://fonts.googleapis.com/earlyaccess/cwtexhei.css', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Ubuntu', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=320" />
-  <link href='https://fonts.googleapis.com/earlyaccess/cwtexhei.css' rel='stylesheet' type='text/css'>
   <style>
-    html {
-      height:100%;
+    .wrap {
+      min-height:100vh;
+    }
+    .cover{
+      min-height: 100vh;
     }
     body {
-      font-family: 'cwTeXHei', sans-serif;
+      font-family: 'Ubuntu', 'cwTeXHei', sans-serif;
       background-color: #FFFFFF;
       margin:0;
-      height:100%;
     }
     #howwebsiteswork_hype_container [class*="span"] {
       float: none;
@@ -35,7 +38,9 @@
 </head>
 <body>
   <%= render partial: 'common/navbar' %>
-  <%= yield %>
+  <div class="wrap">
+    <%= yield %>
+  </div>
   <%= render partial: 'common/footer' %>
 </body>
 </html>

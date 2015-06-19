@@ -1,0 +1,63 @@
+<%= stylesheet_link_tag    'test', media: 'all', 'data-turbolinks-track' => true %>
+<div class="container">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="scoreboard">
+			<h3>目前分數：<span class="score" >0</span></h3>
+		</div>
+		<dl class="q">
+			<dt>Special characters in computer languages are called tokens. Which language tokens in HTML will open and close tags?</dt>
+			<dd><a href="#" class="error">&lpar; &rpar;</a></dd>
+			<dd><a href="#" class="success">&lt; &gt;</a></dd>
+			<dd><a href="#" class="error">&lbrace; &rbrace;</a></dd>
+			<dd><a href="#" class="error">&#8246; &Prime;</a></dd>
+		</dl>
+		<hr />
+		<dl class="q">
+			<dt>Which of the following HTML elements will create a first level headline?</dt>
+			<dd><a href="#" class="error">&lt;head1&gt;Nick&lt;/head1&gt;</a></dd>
+			<dd><a href="#" class="error">h1: Nick</a></dd>
+			<dd><a href="#" class="error">&lt;headline&gt;Nick&lt;/headline&gt;</a></dd>
+			<dd><a href="#" class="success">&lt;h1&gt;Nick&lt;/h1&gt;</a></dd>
+		</dl>
+		<hr />
+		<dl class="q">
+			<dt>Which element will allow us to change the title of our page in search results and in browser tabs?</dt>
+			<dd><a href="#" class="error">&lt;head1&gt;</a></dd>
+			<dd><a href="#" class="success">&lt;title&gt;</a></dd>
+			<dd><a href="#" class="error">&lt;headline&gt;</a></dd>
+			<dd><a href="#" class="error">&lt;h1&gt;</a></dd>
+		</dl>
+		<hr />
+		<dl class="q">
+			<dt>Which of the following HTML elements is formatted properly?</dt>
+			<dd><a href="#" class="success">&lt;h1&gt;Nick&lt;/h1&gt;</a></dd>
+			<dd><a href="#" class="error">h1: Nick</a></dd>
+			<dd><a href="#" class="error">&lt;h1&gt;Nick</a></dd>
+			<dd><a href="#" class="error">&lt;h1Nick&lt;/h1&gt;</a></dd>
+		</dl>
+		<hr />
+		<dl class="q">
+			<dt>Which element should come before the &lt;body&gt; element?</dt>
+			<dd><a href="#" class="error">&lt;head&gt;</a></dd>
+			<dd><a href="#" class="error">&lt;div&gt;</a></dd>
+			<dd><a href="#" class="error">&lt;footer&gt;</a></dd>
+			<dd><a href="#" class="success">&lt;header&gt;</a></dd>
+		</dl>
+		<hr />
+		<dl class="q">
+			<dt>Almost every web server recognizes the special filename as the home page. What’s the name of that file?</dt>
+			<dd><a href="#" class="error">home.html</a></dd>
+			<dd><a href="#" class="error">homepage.html</a></dd>
+			<dd><a href="#" class="success">index.html</a></dd>
+			<dd><a href="#" class="error">default.html</a></dd>
+		</dl>
+	</div>
+	<div class="col-xs-6 col-xs-offset-3 btn-refresh">
+		<button id="PageRefresh" class="btn btn-lg btn-block">在玩一次</button>
+	</div>
+</div>
+
+
+<%= javascript_include_tag 'http://code.jquery.com/jquery-1.9.1.js' %>
+<%= javascript_include_tag 'alertify/alertify.min.js' %>
+<%= javascript_include_tag 'alertify/test.js' %>
