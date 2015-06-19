@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-  get  'members' => 'members#index'
+  get  'members'  => 'members#index'
+  get  'timeline' => 'timeline#index'
 
   scope 'learn' do
       get 'how-websites-work' => 'learn#how_websites_work'
