@@ -1,3 +1,77 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* l-course 是針對 course 有相同樣式可以重複使用 */
+.l-course {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #00BCD4;
+  padding: 10px 10px 30px;
+  margin: 30px 0;
+}
+.l-course-content > h3 {
+  color: #212121;
+  min-height: 38px;
+  margin: 15px 0;
+}
+.l-course-content > p {
+  color: #727272;
+  padding: 20px 5px;
+  display: -webkit-box;
+  font-size: 14px; 
+  line-height: 1.5;
+  -webkit-line-clamp: 3;  /* 第 3 行要顯示點點點 */
+  /* height = font-size * line-height * line-clamp + padding-top */
+  height: 83px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.l-course-status::before {
+  content: "NEW";
+  padding: 3px;
+  font-size: 70%;
+  background-color: #00BCD4;
+  border: 2px solid #00BCD4;
+  border-radius: 30% 30% 70% 70%;
+  margin-right: 5px;
+  color: #fff;
+  transform: skewX(170deg);
+}
+.l-course button {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  font-weight: 700;
+  background-color: #00BCD4;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 20px;
+}
+.l-course button:hover {
+  background-color: #0097A7;
+}
+.l-course button a {
+    color: #fff;
+    text-decoration: none;
+}
+.course-intro > p {
+  text-indent: 2em;
+}
+@media screen and (min-width: 992px) {
+  .course-intro > p {
+    display: -webkit-box;
+    padding-top: 10px;
+    font-size: 14px; 
+    line-height: 1.5;
+    -webkit-line-clamp: 3;  /* 第 3 行要顯示點點點 */
+    /* height = font-size * line-height * line-clamp + padding-top */
+    height: 73px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+}

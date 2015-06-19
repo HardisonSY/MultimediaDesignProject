@@ -1,61 +1,3 @@
-<style>
-    /* l-course 是針對 course 有相同樣式可以重複使用 */
-        .l-course {
-          position: relative;
-          background-color: #fff;
-          border: 1px solid #00BCD4;
-          padding: 10px 10px 30px;
-          margin: 30px 0;
-        }
-        .l-course-content > h3 {
-          color: #212121;
-          min-height: 38px;
-          margin: 15px 0;
-        }
-        .l-course-content > p {
-          color: #727272;
-          padding: 20px 5px;
-          display: -webkit-box;
-          font-size: 14px; 
-          line-height: 1.5;
-          -webkit-line-clamp: 3;  /* 第 3 行要顯示點點點 */
-          /* height = font-size * line-height * line-clamp + padding-top */
-          height: 83px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          -webkit-box-orient: vertical;
-        }
-        .l-course-status::before {
-          content: "NEW";
-          padding: 3px;
-          font-size: 70%;
-          background-color: #00BCD4;
-          border: 2px solid #00BCD4;
-          border-radius: 30% 30% 70% 70%;
-          margin-right: 5px;
-          color: #fff;
-          transform: skewX(170deg);
-        }
-        .l-course button {
-          position: absolute;
-          left: 50%;
-          top: 100%;
-          -webkit-transform: translate(-50%, -50%);
-          font-weight: 700;
-          background-color: #00BCD4;
-          color: #fff;
-          border-radius: 3px;
-          border: none;
-          padding: 10px 20px;
-        }
-        .l-course button:hover {
-          background-color: #0097A7;
-        }
-        .l-course button a {
-            color: #fff;
-            text-decoration: none;
-        }
-</style>
 <div class="cover">
   <div class="cover-image"></div>
   <div class="container">
@@ -69,32 +11,20 @@
       </div>
   </div>
 </div>
-<div class="carousel slide" id="fullcarousel-example" data-interval="5000"
-data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="item">
-            <img src="https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?q=25&amp;fm=jpg&amp;s=282e5978de17d6cd2280888d16f06f04"
-            width="400dp" height="300dp">
-            <div class="carousel-caption">
-                <h2>Title</h2>
-                <p>Description</p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#fullcarousel-example" data-slide="prev"><i class="icon-prev fa fa-angle-left"></i></a>
-    <a class="right carousel-control" href="#fullcarousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
-</div>
 <div class="section">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="https://unsplash.imgix.net/photo-1422728221357-57980993ea99?q=25&amp;fm=jpg&amp;s=b4a34018d745e33048bcfc326cb9907b"
-                class="img-responsive">
+                <%= image_tag('courses/html.svg') %>
             </div>
-            <div class="col-md-6">
-                <h1>讓我們多聽聽各方的聲音。</h1>
-                <h3>A subtitle</h3>
-                <p>很累的时候，好天氣不等人，像阿不思一樣不喝咖啡，就好像咖啡，噢，肚里暖洋洋，前來事務所看看，開一間可愛的民宿，十大原罪可以哦，大概是咖啡喝太多就是這麼回事吧～我又喝了两杯咖啡燒水，咖啡因是我合法的興奮劑，早餐：五匙麥片加牛奶，當然，口渴時想喝的應該是水，我就要把握享受它的機會。生，爺爺都是從孫子走過來的……不怕虎一樣的敵人，愛情，沒有權，就會有別的女人花你的錢，不然不曉得奮鬥，必死無疑；人不要臉，容易；活，愛情就像二個拉著橡皮筋的人，愛情就像二個拉著橡皮筋的人，時間久了才能讓人看出來。天哪，今天心情不好.我只有四句話想說.包括這句和前面的兩句.我的話說完了。還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴？多一點委屈，最核心的問題是根據市場去製定你的產品，這世界上沒有優秀的理念，天不怕，要少開店、開好店，東西得一點點幹，戰略不能落實到結果和目標上面，什麼是團隊呢？但.....格子籠養雞是沒維護到雞權，泰美女總理盈拉，全國機場禁止起降，叔叔、阿姨，你會不三七二十一、七七四十九，《蘋果娛樂Online》線上直播，阿....不會吧???iPad，夠浪漫，遠比上Google搜尋更有效率，壽司和蒼井空的關連在哪裡？</p>
+            <div class="col-md-6 course-intro">
+                <h1>How websites work?</h1>
+                <h3>What are websites?</h3>
+                <p>你所看到的網頁上面是由圖片、音樂、文字、影片等等元件組成，對電腦而言，他們都被寫成一種叫 HTML 的語言。對於一個人類而言，HTML 可能不好被直接理解，但是你的瀏覽器非常愛他們。瀏覽器透過 HTML 將網站的元件一一組成你所看到網頁，你可以把網頁看成是一塊又一塊的拼圖，HTML Code 會將他們拼湊起來。</p>
+                <h3>Where are websites?</h3>
+                <p>這些元件、HTML Code 需要被存放在一個地方，就像是你會把音樂、圖片放在你的電腦裡，網站的元件、HTML Code 會被放在遠端的 Server 裡，Server 其實就是一台強大的電腦，只是沒有鍵盤、滑鼠、螢幕，因為它存在就是為了存放網站元件、HTML Code 這個目的，所以他被叫做 Server，因為他 Serve Data。</p>
+                <h3>How to website get to you?</h3>
+                <p>當你在瀏覽器上鍵入網址，你的電腦會透過 Domain Name System (DNS) 去 (Online 的) 找尋這個網頁被存在哪。你可以把 Server 當成一個棟大樓，DNS 會告訴你的電腦哪一個網頁要去哪一台 Server 找，所以 DNS 其實就像是一本電話簿(聯絡簿)。當你的電腦找到網頁被存在哪後，Server 會把網站元件、HTML Code 傳給你的電腦，再由瀏覽器將他們組成你所看到的網頁。</p>
             </div>
         </div>
     </div>
@@ -102,37 +32,37 @@ data-ride="carousel">
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
               <div class="l-course">
                 <div class="l-course-img thumbnail">
                   <img src="https://static.pirates.com.tw/prosimg/1/9/3/3/6/img.img.jpg" alt="Fake image" />
                 </div>
                 <div class="l-course-content">
-                  <h2 class="l-course-status h3">How websites work?</h2>
+                  <h2 class="l-course-status h4">How websites work?</h2>
                   <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
                   <button><%= link_to "進入課程", how_websites_work_path %></button>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
               <div class="l-course">
                 <div class="l-course-img thumbnail">
-                  <img src="https://static.pirates.com.tw/prosimg/1/9/3/3/6/img.img.jpg" alt="Fake image" />
+                  <%= image_tag('courses/html.svg') %>
                 </div>
                 <div class="l-course-content">
-                  <h2 class="l-course-status h3">What's HTML?</h2>
+                  <h2 class="l-course-status h4">What's HTML?</h2>
                   <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
                   <button><%= link_to "進入課程", what_is_html_path %></button>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
               <div class="l-course">
                 <div class="l-course-img thumbnail">
-                  <img src="https://static.pirates.com.tw/prosimg/1/9/3/3/6/img.img.jpg" alt="Fake image" />
+                  <%= image_tag('courses/css.svg') %>
                 </div>
                 <div class="l-course-content">
-                  <h2 class="l-course-status h3">What's CSS?</h2>
+                  <h2 class="l-course-status h4">What's CSS?</h2>
                   <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
                   <button><%=link_to "進入課程", what_is_css_path%></button>
                 </div>

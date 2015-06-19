@@ -18,6 +18,10 @@
     .cover{
       min-height: 100vh;
     }
+    html, body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-family: 'Ubuntu', 'cwTeXHei', sans-serif;
+    }
+    html,
     body {
       font-family: 'Ubuntu', 'cwTeXHei', sans-serif;
       background-color: #FFFFFF;
@@ -51,6 +55,25 @@
     .navbar-default .navbar-nav > .open > a:focus {
       background-color: #1976D2;
       color: #E3F2FD;
+    }
+    .navbar-default .navbar-toggle {
+      background-color: #fff;
+      border: none;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #2280D1;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+      background-color: #E3F2FD;
+    }
+    @media (max-width: 767px){
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+      }
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #E3F2FD;
+      }
     }
   </style>
 </head>
