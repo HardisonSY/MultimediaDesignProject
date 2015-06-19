@@ -1,3 +1,61 @@
+<style>
+    /* l-course 是針對 course 有相同樣式可以重複使用 */
+        .l-course {
+          position: relative;
+          background-color: #fff;
+          border: 1px solid #00BCD4;
+          padding: 10px 10px 30px;
+          margin: 30px 0;
+        }
+        .l-course-content > h3 {
+          color: #212121;
+          min-height: 38px;
+          margin: 15px 0;
+        }
+        .l-course-content > p {
+          color: #727272;
+          padding: 20px 5px;
+          display: -webkit-box;
+          font-size: 14px; 
+          line-height: 1.5;
+          -webkit-line-clamp: 3;  /* 第 3 行要顯示點點點 */
+          /* height = font-size * line-height * line-clamp + padding-top */
+          height: 83px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+        }
+        .l-course-status::before {
+          content: "NEW";
+          padding: 3px;
+          font-size: 70%;
+          background-color: #00BCD4;
+          border: 2px solid #00BCD4;
+          border-radius: 30% 30% 70% 70%;
+          margin-right: 5px;
+          color: #fff;
+          transform: skewX(170deg);
+        }
+        .l-course button {
+          position: absolute;
+          left: 50%;
+          top: 100%;
+          -webkit-transform: translate(-50%, -50%);
+          font-weight: 700;
+          background-color: #00BCD4;
+          color: #fff;
+          border-radius: 3px;
+          border: none;
+          padding: 10px 20px;
+        }
+        .l-course button:hover {
+          background-color: #0097A7;
+        }
+        .l-course button a {
+            color: #fff;
+            text-decoration: none;
+        }
+</style>
 <div class="cover">
   <div class="cover-image"></div>
   <div class="container">
@@ -44,26 +102,41 @@ data-ride="carousel">
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <img src="https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?q=25&amp;fm=jpg&amp;s=1ffa61419561b5c796bca3158e7c704c"
-                class="img-responsive">
-                <h2>How websites work?</h2>
-                <p>Want to learn more?</p>
-                <%=link_to "進入課程", how_websites_work_path, class: 'btn btn-default'%>
+            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+              <div class="l-course">
+                <div class="l-course-img thumbnail">
+                  <img src="https://static.pirates.com.tw/prosimg/1/9/3/3/6/img.img.jpg" alt="Fake image" />
+                </div>
+                <div class="l-course-content">
+                  <h2 class="l-course-status h3">How websites work?</h2>
+                  <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
+                  <button><%= link_to "進入課程", how_websites_work_path %></button>
+                </div>
+              </div>
             </div>
-            <div class="col-md-4">
-                <img src="https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?q=25&amp;fm=jpg&amp;s=1ffa61419561b5c796bca3158e7c704c"
-                class="img-responsive">
-                <h2>What's HTML?</h2>
-                <p>Want to learn more?</p>
-                <%=link_to "進入課程", what_is_html_path, class: 'btn btn-default'%>
+            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+              <div class="l-course">
+                <div class="l-course-img thumbnail">
+                  <img src="https://static.pirates.com.tw/prosimg/1/9/3/3/6/img.img.jpg" alt="Fake image" />
+                </div>
+                <div class="l-course-content">
+                  <h2 class="l-course-status h3">What's HTML?</h2>
+                  <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
+                  <button><%= link_to "進入課程", what_is_html_path %></button>
+                </div>
+              </div>
             </div>
-            <div class="col-md-4">
-                <img src="https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?q=25&amp;fm=jpg&amp;s=1ffa61419561b5c796bca3158e7c704c"
-                class="img-responsive">
-                <h2>What's CSS?</h2>
-                <p>Want to learn more?</p>
-                <%=link_to "進入課程", what_is_css_path, class: 'btn btn-default'%>
+            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+              <div class="l-course">
+                <div class="l-course-img thumbnail">
+                  <img src="https://static.pirates.com.tw/prosimg/1/9/3/3/6/img.img.jpg" alt="Fake image" />
+                </div>
+                <div class="l-course-content">
+                  <h2 class="l-course-status h3">What's CSS?</h2>
+                  <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
+                  <button><%=link_to "進入課程", what_is_css_path%></button>
+                </div>
+              </div>
             </div>
         </div>
     </div>

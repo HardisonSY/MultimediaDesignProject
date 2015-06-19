@@ -1,3 +1,130 @@
 // Place all the styles related to the members controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ $border-color: #E0F2F1;
+
+    .box2:nth-child(1) {
+        -webkit-animation: cc 5s 2s infinite;
+    }
+
+    .box2:nth-child(2) {
+        -webkit-animation: cc 5s 2s infinite;
+    }
+
+    .box2:nth-child(3) {
+        -webkit-animation: cc 5s 2s infinite;
+    }
+
+    .box2:nth-child(4) {
+        -webkit-animation: cc 5s 2s infinite;
+    }
+    .box2 img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .box2 {
+        width: 200px;
+        height: 250px;
+            /*position: absolute;*/
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .box2 div {
+        width: 50%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .box2 div:nth-child(1),
+    .box2 div:nth-child(4) {
+        position: absolute;
+        height: 135px;
+        transform: skewY(-30deg);
+    }
+
+    .box2 div:nth-child(2),
+    .box2 div:nth-child(3) {
+        position: absolute;
+        height: 135px;
+        transform: skewY(30deg);
+    }
+
+    .box2 div:nth-child(1) {
+        left: 0;
+        top: 22px;
+        border: 6px solid $border-color;
+        border-width: 10px 0 0 10px;
+    }
+
+    .box2 div:nth-child(2) {
+        right: 0;
+        top: 22px;
+        border: 6px solid $border-color;
+        border-width: 10px 10px 0 0;
+    }
+
+    .box2 div:nth-child(3) {
+        left: 0;
+        bottom: 36px;
+        border: 6px solid $border-color;
+        border-width: 0 0 10px 10px;
+    }
+
+    .box2 div:nth-child(4) {
+        right: 0;
+        bottom: 36px;
+        border: 6px solid $border-color;
+        border-width: 0 10px 10px 0;
+    }
+
+    .box2 div img {
+        position: absolute;
+    }
+
+    .box2 div:nth-child(1) img {
+        left: -10px;
+        top: -10px;
+        transform: skewY(30deg);
+    }
+
+    .box2 div:nth-child(2) img {
+        right: -10px;
+        top: -10px;
+        transform: skewY(-30deg);
+    }
+
+    .box2 div:nth-child(3) img {
+        left: -10px;
+        bottom: -10px;
+        transform: skewY(-30deg);
+    }
+
+    .box2 div:nth-child(4) img {
+        right: -10px;
+        bottom: -10px;
+        transform: skewY(30deg);
+    }
+
+    @-webkit-keyframes cc {
+        0% {
+            transform: perspective(500px) rotateY(0deg);
+        }
+
+        6% {
+            transform: perspective(500px) rotateY(-15deg);
+        }
+
+        100% {
+            transform: perspective(500px) rotateY(360deg);
+        };
+    }
+    .member {
+        margin: 50px 0;
+    }
