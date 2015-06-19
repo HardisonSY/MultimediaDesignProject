@@ -22,9 +22,10 @@
 .alertify-logs {
 	position: fixed;
 	z-index: 5000;
-	top: 50px;
-	right: 10px;
-	width: 20%;
+	top: 100px;
+	right: 30px;
+	width: 10%;
+	min-width: 80px;
 }
 .alertify-logs-hidden {
 	display: none;
@@ -62,7 +63,9 @@
 		background: #5CB811;
 		background: rgba(92,184,17,.9);
 	}
-
+.mg-t-md {
+	margin-top: 70px;
+}
 a {
 	color: #03A9F4;
 	text-decoration: none;
@@ -76,6 +79,7 @@ body {
 }
 .q {
 	counter-reset:subsection;
+	padding: 10px;
 }
 dt {
 	position: relative;
@@ -104,12 +108,16 @@ dd::before {
 	margin-right: 10px;
 	color: #03A9F4;
 }
+
 .disabled,
 .disabled a,
 .disabled dt,
 .disabled dd::before {
 	pointer-events: none;
 	color: #B6B6B6;
+}
+span.score::before {
+	content: "目前分數：";
 }
 .btn-refresh,
 .scoreboard {
@@ -121,5 +129,22 @@ dd::before {
 	color: #fff;
 }
 .scoreboard {
-	color: #FFC107;
+	z-index: 5000;
+	color: #2196F3;
+	position: fixed;
+	top: 0px;
+	right: 30px;
+}
+
+dd.correct::before {
+	color: #388E3C;
+}
+dd.wrong::before {
+	color: #D32F2F;
+}
+
+@media screen and (max-width: 997px) {
+	span.score::before {
+	content: "";
+}
 }
