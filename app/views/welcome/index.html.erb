@@ -1,24 +1,24 @@
-<div class="cover">
-  <div class="cover-image"></div>
-  <div class="container">
-      <div class="row">
+<section>
+  <div class="cover-image">
+    <div class="cover">
+      <div class="container">
           <div class="col-md-12 text-center">
-              <h1>Welcome</h1>
-              <p>Do What You Love</p>
-              <br>
-              <br>
+            <h1 class="sr-only">Flash Project</h1>
+            <h2 class="h1">Welcome</h2>
+            <h3>Do What You Love</h3>
           </div>
       </div>
+    </div>
   </div>
-</div>
-<div class="section">
+  <article class="section">
+    <h1 class="sr-only">What's new</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <%= image_tag('courses/html.svg') %>
             </div>
             <div class="col-md-6 course-intro">
-                <h1>How websites work?</h1>
+                <h2>How websites work?</h2>
                 <h3>What are websites?</h3>
                 <p>你所看到的網頁上面是由圖片、音樂、文字、影片等等元件組成，對電腦而言，他們都被寫成一種叫 HTML 的語言。對於一個人類而言，HTML 可能不好被直接理解，但是你的瀏覽器非常愛他們。瀏覽器透過 HTML 將網站的元件一一組成你所看到網頁，你可以把網頁看成是一塊又一塊的拼圖，HTML Code 會將他們拼湊起來。</p>
                 <h3>Where are websites?</h3>
@@ -28,46 +28,48 @@
             </div>
         </div>
     </div>
-</div>
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
-              <div class="l-course">
-                <div class="l-course-img thumbnail">
-                  <img src="https://static.pirates.com.tw/prosimg/1/9/3/3/6/img.img.jpg" alt="Fake image" />
-                </div>
-                <div class="l-course-content">
-                  <h2 class="l-course-status h4">How websites work?</h2>
-                  <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
-                  <button><%= link_to "進入課程", how_websites_work_path %></button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
-              <div class="l-course">
-                <div class="l-course-img thumbnail">
-                  <%= image_tag('courses/html.svg') %>
-                </div>
-                <div class="l-course-content">
-                  <h2 class="l-course-status h4">What's HTML?</h2>
-                  <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
-                  <button><%= link_to "進入課程", what_is_html_path %></button>
+  </article>
+  <article class="section">
+  <h1 class="sr-only">Courses</h1>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
+                <div class="l-course">
+                  <div class="l-course-img thumbnail">
+                    <%= image_tag('courses/website.svg') %>
+                  </div>
+                  <div class="l-course-content">
+                    <h2 class="l-course-status h4">How websites work?</h2>
+                    <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
+                    <button><%= link_to "進入課程", how_websites_work_path %></button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
-              <div class="l-course">
-                <div class="l-course-img thumbnail">
-                  <%= image_tag('courses/css.svg') %>
-                </div>
-                <div class="l-course-content">
-                  <h2 class="l-course-status h4">What's CSS?</h2>
-                  <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
-                  <button><%=link_to "進入課程", what_is_css_path%></button>
+              <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
+                <div class="l-course">
+                  <div class="l-course-img thumbnail">
+                    <%= image_tag('courses/html.svg') %>
+                  </div>
+                  <div class="l-course-content">
+                    <h2 class="l-course-status h4">What's HTML?</h2>
+                    <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
+                    <button><%= link_to "進入課程", what_is_html_path %></button>
+                  </div>
                 </div>
               </div>
-            </div>
-        </div>
-    </div>
-</div>
+              <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
+                <div class="l-course">
+                  <div class="l-course-img thumbnail">
+                    <%= image_tag('courses/css.svg') %>
+                  </div>
+                  <div class="l-course-content">
+                    <h2 class="l-course-status h4">What's CSS?</h2>
+                    <p>相信大家對於Audi A1 一定不陌生，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊，甚至很多船長跟伙伴家裡都有一輛 這台真的是小巧好開，又漂亮的好車啊</p>
+                    <button><%=link_to "進入課程", what_is_css_path%></button>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </article>
+</section>
