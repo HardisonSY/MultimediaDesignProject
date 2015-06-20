@@ -14,3 +14,5 @@ Rails.application.config.assets.precompile += %w( what_is_html/whatishtml_hype_g
 Rails.application.config.assets.precompile += %w( test.css )
 Rails.application.config.assets.precompile += %w( alertify/alertify.min.js )
 Rails.application.config.assets.precompile += %w( alertify/test.js )
+Rails.application.config.assets.precompile += %w( timeline/timeline.js )
+Rails.application.config.assets.precompile += %w( timeline/downscrolling_hype_generated_script.js )
