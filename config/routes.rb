@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get  'members'  => 'members#index'
   get  'timeline' => 'timeline#index'
+  get  'sitemap'  => 'sitemap#index'
 
   scope 'learn' do
       get 'how-websites-work' => 'learn#how_websites_work'
