@@ -5,31 +5,27 @@
 		<div class="sitemap-content">
 			<h1>Hello Site Map</h1>
 			<hr class="style-four" />
-			<div class="section">
+			<div class="col-sm-4 col-xs-12">
 				<h3><a href="/">首頁</a></h3>
 				<hr class="style-one" />
+				<h3><%= link_to "關於我們", members_path %></h3>
+				<hr class="style-one" />
+				<h3><%= link_to "專案進程", timeline_path %></h3>
+				<hr class="style-one" />
 			</div>
-			<div class="section">
+			<div class="col-sm-4 col-xs-12">
 				<h3>課程 > </h3>
 				<hr class="style-one" />
 				<h4><%= link_to "How websites work", { :controller=> 'learn', :action => 'how_websites_work' } %></h4>
 				<h4><%= link_to "What's HTML", { :controller=> 'learn', :action => 'what_is_html' } %></h4>
 				<h4><%= link_to "What's CSS", { :controller=> 'learn', :action => 'what_is_css' } %></h4>
 			</div>
-			<div class="section">
+			<div class="col-sm-4 col-xs-12">
 				<h3>測驗 > </h3>
 				<hr class="style-one" />
 				<h4><%= link_to "How websites work", { :controller=> 'test', :action => 'how_websites_work' } %></h4>
 				<h4><%= link_to "What's HTML", { :controller=> 'test', :action => 'what_is_html' } %></h4>
 				<h4><%= link_to "What's CSS", { :controller=> 'test', :action => 'what_is_css' } %></h4>
-			</div>
-			<div class="section">
-				<h3><%= link_to "關於我們", members_path %></h3>
-				<hr class="style-one" />
-			</div>
-			<div class="section">
-				<h3><%= link_to "專案進程", timeline_path %></h3>
-				<hr class="style-one" />
 			</div>
 		</div>
 	</article>
