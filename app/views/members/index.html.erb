@@ -78,4 +78,29 @@
             </div>
         </div>
     </article>
+    <article style="padding-bottom: 10%;">
+        <form class="cd-form floating-labels">
+            <legend>Contact Us</legend>
+
+            <div class="icon">
+                <label class="cd-label" for="cd-name">Name</label>
+                <input class="user" type="text" name="cd-name" id="cd-name" required>
+            </div> 
+
+            <div class="icon">
+                <label class="cd-label" for="cd-email">Your Email</label>
+                <input class="email" type="email" name="cd-email" id="cd-email" required>
+            </div>
+            <div class="icon">
+                <label class="cd-label" for="cd-textarea">Message</label>
+                <textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </article>
 </section>
+<%= javascript_include_tag 'timeline/modernizr.js' %>
+<%= javascript_include_tag 'members/main.js' %>
