@@ -291,10 +291,10 @@ header {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: #E3F2FD;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0 3px 0 #B0BEC5;
 }
 .cd-timeline-content:after {
   content: "";
@@ -315,16 +315,6 @@ header {
   margin: 1em 0;
   line-height: 1.6;
 }
-.cd-timeline-content .cd-read-more {
-  float: right;
-  padding: .8em 1em;
-  background: #acb7c0;
-  color: white;
-  border-radius: 0.25em;
-}
-.no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
-}
 .cd-timeline-content .cd-date {
   float: left;
   padding: .8em 0;
@@ -338,7 +328,7 @@ header {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid #E3F2FD;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -364,7 +354,7 @@ header {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: #E3F2FD;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -384,7 +374,7 @@ header {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: #E3F2FD;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
