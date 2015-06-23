@@ -41,8 +41,8 @@ Rails.application.configure do
     address:              'smtp.mandrillapp.com',
     port:                 587,
     domain:               'cloudycountry.com',
-    user_name:            Rails.application.secrets.mailer_username,
-    password:             Rails.application.secrets.mailer_password,
+    user_name:            ENV["mailer_username"],
+    password:             ENV["mailer_password"],
     authentication:       'plain',
     enable_starttls_auto: true
   }
