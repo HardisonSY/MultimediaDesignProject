@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get  'members'  => 'members#index'
   get  'timeline' => 'timeline#index'
   get  'sitemap'  => 'sitemap#index'
+  post 'contact'  => 'contact#sendmessage'
 
   scope 'learn' do
       get 'how-websites-work' => 'learn#how_websites_work'
