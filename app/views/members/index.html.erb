@@ -79,8 +79,8 @@
         </div>
     </article>
     <article style="padding-bottom: 10%;">
-        <%= form_tag({controller: 'contact', action: 'sendmessage'}, method: 'POST', class: 'cd-form floating-labels') do %>
-          <legend>Contact Us</legend>
+        <%= form_tag({controller: 'contact', action: 'sendmessage'}, method: 'POST', class: 'cd-form floating-labels contact-form') do %>
+          <legend><span>C</span>ontact Us</legend>
           <div class="icon">
             <%= label_tag 'cd-name', 'Your Name', class: 'cd-label' %>
             <%= text_field_tag 'name', params[:name], id: 'cd-name', class: 'user', required: 'true' %>
