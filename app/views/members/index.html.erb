@@ -79,27 +79,27 @@
         </div>
     </article>
     <article style="padding-bottom: 10%;">
-        <form class="cd-form floating-labels">
-            <legend>Contact Us</legend>
+        <%= form_tag({controller: 'contact', action: 'sendmessage'}, method: 'POST', class: 'cd-form floating-labels') do %>
+          <legend>Contact Us</legend>
+          <div class="icon">
+            <%= label_tag 'cd-name', 'Your Name', class: 'cd-label' %>
+            <%= text_field_tag 'name', params[:name], id: 'cd-name', class: 'user', required: 'true' %>
+          </div>
 
-            <div class="icon">
-                <label class="cd-label" for="cd-name">Name</label>
-                <input class="user" type="text" name="cd-name" id="cd-name" required>
-            </div> 
+          <div class="icon">
+            <%= label_tag 'cd-eamil', 'Your Email', class: 'cd-label' %>
+            <%= email_field_tag 'email', params[:eamil], id:'cd-email', class: 'email', required: 'true' %>
+          </div>
 
-            <div class="icon">
-                <label class="cd-label" for="cd-email">Your Email</label>
-                <input class="email" type="email" name="cd-email" id="cd-email" required>
-            </div>
-            <div class="icon">
-                <label class="cd-label" for="cd-textarea">Message</label>
-                <textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
-            </div>
+          <div class="icon">
+            <%= label_tag 'cd-textarea', 'Message', class: 'cd-label' %>
+            <%= text_area_tag 'message', params[:message], class: 'message', id:'cd-textarea', required: 'true'%>
+          </div>
+          <div>
+            <%= submit_tag 'Send Message' %>
+          </div>
 
-            <div>
-                <input type="submit" value="Send Message">
-            </div>
-        </form>
+        <% end %>
     </article>
 </section>
 <%= javascript_include_tag 'timeline/modernizr.js' %>
