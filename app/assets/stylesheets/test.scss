@@ -144,7 +144,12 @@ dd.wrong::before {
 }
 
 @media screen and (max-width: 992px) {
-	span.score::before {
-	content: "";
+	span.score {
+		background-color: #B3E5FC;
+		padding: 3px 15px;
+		border-radius: 3px;
+		&::before {
+			content: "";
+		}
 	}
 }
