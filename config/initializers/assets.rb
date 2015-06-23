@@ -11,6 +11,7 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( how_websites_work/howwebsiteswork_hype_generated_script.js )
 Rails.application.config.assets.precompile += %w( what_is_html/whatishtml_hype_generated_script.js )
+Rails.application.config.assets.precompile += %w( what_is_css/whatiscss_hype_generated_script.js )
 Rails.application.config.assets.precompile += %w( test.css )
 Rails.application.config.assets.precompile += %w( alertify/alertify.min.js )
 Rails.application.config.assets.precompile += %w( alertify/test.js )
